@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Users, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const courses = [
   {
@@ -9,6 +10,7 @@ const courses = [
     students: "3,200+",
     rating: "4.9",
     tag: "Most Popular",
+    slug: "amc-mcq-preparation",
     description: "Comprehensive preparation for AMC CAT MCQ examination with 5000+ practice questions.",
   },
   {
@@ -18,6 +20,7 @@ const courses = [
     students: "2,800+",
     rating: "4.8",
     tag: "UK Pathway",
+    slug: "plab-preparation",
     description: "Complete PLAB preparation including clinical skills training for Part 2 OSCE.",
   },
   {
@@ -27,6 +30,7 @@ const courses = [
     students: "4,100+",
     rating: "4.9",
     tag: "Fast Track",
+    slug: "prometric-exam-prep",
     description: "Targeted preparation for DHA, HAAD, MOH, SMLE and other Gulf medical exams.",
   },
   {
@@ -36,6 +40,7 @@ const courses = [
     students: "1,500+",
     rating: "4.7",
     tag: "New",
+    slug: "nzrex-clinical",
     description: "Focused clinical preparation for New Zealand medical registration examination.",
   },
 ];
@@ -86,9 +91,11 @@ const Courses = () => {
                 </span>
               </div>
 
-              <Button className="btn-gradient text-primary-foreground font-semibold hover:opacity-90 transition-opacity w-full">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link to={`/course/${course.slug}`}>
+                <Button className="btn-gradient text-primary-foreground font-semibold hover:opacity-90 transition-opacity w-full">
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           ))}
         </div>
