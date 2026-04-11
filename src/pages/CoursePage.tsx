@@ -105,7 +105,7 @@ const CoursePage = () => {
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-1.5 block">
-                      Full Name<span className="text-red-500">*</span>
+                      Full Name<span className="text-destructive">*</span>
                     </label>
                     <input
                       type="text"
@@ -117,7 +117,7 @@ const CoursePage = () => {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-1.5 block">
-                      Email<span className="text-red-500">*</span>
+                      Email<span className="text-destructive">*</span>
                     </label>
                     <input
                       type="email"
@@ -129,7 +129,7 @@ const CoursePage = () => {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-1.5 block">
-                      Phone Number<span className="text-red-500">*</span>
+                      Phone Number<span className="text-destructive">*</span>
                     </label>
                     <input
                       type="tel"
