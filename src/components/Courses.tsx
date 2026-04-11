@@ -91,9 +91,11 @@ const Courses = () => {
                 </span>
               </div>
 
-              <Button className="btn-gradient text-primary-foreground font-semibold hover:opacity-90 transition-opacity w-full">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link to={`/course/${course.slug}`}>
+                <Button className="btn-gradient text-primary-foreground font-semibold hover:opacity-90 transition-opacity w-full">
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           ))}
         </div>
