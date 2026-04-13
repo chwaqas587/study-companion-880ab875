@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 
 const navLinks = [
   { label: "Courses", href: "/courses" },
@@ -12,6 +13,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -50,6 +52,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+          </button>
           <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
             Login
           </Button>
@@ -92,6 +101,13 @@ const Navbar = () => {
             )
           )}
           <div className="flex flex-col gap-2 pt-2">
+            <button
+              onClick={toggleTheme}
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
+            >
+              {theme === "light" ? <Moon size={16} /> : <Sun size={16} />}
+              {theme === "light" ? "Dark Mode" : "Light Mode"}
+            </button>
             <Button variant="ghost" className="justify-start text-muted-foreground">Login</Button>
             <Button className="btn-gradient text-primary-foreground font-semibold">Get Started</Button>
           </div>
