@@ -91,7 +91,7 @@
     --sidebar-border: 222 25% 18%;
     --sidebar-ring: 212 100% 14%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(212 80% 24%), hsl(212 100% 14%));
+    --hero-gradient: linear-gradient(135deg, #6aa0dd, hsl(212deg 87.46% 33.18%));
     --card-hover-border: 212 80% 24%;
     --glow: 0 0 40px hsl(212 80% 24% / 0.15);
   }
