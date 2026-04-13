@@ -13,6 +13,7 @@ export interface CourseData {
   slug: string;
   title: string;
   subtitle: string;
+  category: string;
   tag: string;
   duration: string;
   students: string;
@@ -46,6 +47,7 @@ export const courses: CourseData[] = [
     slug: "amc-mcq-preparation",
     title: "AMC MCQ Preparation",
     subtitle: "Australian Medical Council",
+    category: "Australia",
     tag: "Most Popular",
     duration: "12 Weeks",
     students: "3,200+",
@@ -126,6 +128,7 @@ export const courses: CourseData[] = [
     slug: "plab-preparation",
     title: "PLAB 1 & 2 Course",
     subtitle: "Professional & Linguistic Assessment",
+    category: "United Kingdom",
     tag: "UK Pathway",
     duration: "16 Weeks",
     students: "2,800+",
@@ -206,6 +209,7 @@ export const courses: CourseData[] = [
     slug: "prometric-exam-prep",
     title: "Prometric Exam Prep",
     subtitle: "Gulf Countries Licensing",
+    category: "Gulf Countries",
     tag: "Fast Track",
     duration: "10 Weeks",
     students: "4,100+",
@@ -286,6 +290,7 @@ export const courses: CourseData[] = [
     slug: "nzrex-clinical",
     title: "NZREX Clinical",
     subtitle: "New Zealand Registration Exam",
+    category: "New Zealand",
     tag: "New",
     duration: "14 Weeks",
     students: "1,500+",
