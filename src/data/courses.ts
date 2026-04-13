@@ -13,6 +13,7 @@ export interface CourseData {
   slug: string;
   title: string;
   subtitle: string;
+  category: string;
   tag: string;
   duration: string;
   students: string;
