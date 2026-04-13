@@ -19,10 +19,10 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-lg btn-gradient flex items-center justify-center">
-            <span className="font-heading font-bold text-primary-foreground text-lg">A</span>
+            <span className="font-heading font-bold text-primary-foreground text-lg">E</span>
           </div>
           <span className="font-heading font-bold text-xl text-foreground tracking-tight">
-            Academically
+            EliteMed UK
           </span>
         </Link>
 
